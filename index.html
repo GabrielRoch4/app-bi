@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de Fraudes com KNN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Classificação de Fraudes com KNN</h1>
+    <form id="classificationForm">
+        <!-- Campos de entrada para cada atributo -->
+        <input type="number" step="any" id="distance_from_home" placeholder="Distance from Home" required>
+        <input type="number" step="any" id="distance_from_last_transaction" placeholder="Distance from Last Transaction" required>
+        <input type="number" step="any" id="ratio_to_median_purchase_price" placeholder="Ratio to Median Purchase Price" required>
+        <input type="number" id="repeat_retailer" placeholder="Repeat Retailer (0 ou 1)" required>
+        <input type="number" id="used_chip" placeholder="Used Chip (0 ou 1)" required>
+        <input type="number" id="used_pin_number" placeholder="Used Pin Number (0 ou 1)" required>
+        <input type="number" id="online_order" placeholder="Online Order (0 ou 1)" required>
+        
+        <button type="submit">Classificar</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="app.js"></script>
+    <!-- Adicione a biblioteca PapaParse -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</body>
+</html>
