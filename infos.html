@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/infos-styles.css">
+    <title>Classificador de compras</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud" target="_blank">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="title-container">
+            Informações 
+        </div>
+        <div class="ajuste"></div>
+    </header>
+
+    <main>
+        <div class="dataset-description">
+            Esse dataset foi fornecido por uma instituição financeira não especificada e contém informações detalhadas sobre transações financeiras por cartão de crédito, as quais foram verdadeiras ou fraudulenta, tanto presenciais quanto online.
+        </div>
+
+        <div class="attributes-description">
+            <div class="attributes-description-title">
+                Atributos da base de dados
+            </div>
+
+            <div class="attribute-list">
+                <ul>
+                    <li><span class="attribute-list-title">distance_from_home: </span>Distância entre o local da transação e a residência do titular do cartão. Transações realizadas longe de casa podem ser um indicativo de fraude. A unidade está em quilômetros. </li>
+                </ul>
+                <ul>
+                    <li><span class="attribute-list-title">distance_from_last_transaction: </span>Distância entre o local da última transação e o local da transação atual. Um grande aumento na distância entre transações pode sinalizar uma atividade suspeita. A unidade está em quilômetros. </li>
+                </ul>
+                <ul>
+                    <li><span class="attribute-list-title">ratio_to_median_purchase_price: </span>Esta variável é uma razão (proporção) e, portanto, não tem unidade. Ela representa a razão entre o preço de uma transação e o preço mediano de transações anteriores. Valores próximos a 1 indicam que o preço está próximo da mediana, enquanto valores muito maiores ou menores indicam desvios significativos.</li>
+                </ul>
+                <ul>
+                    <li><span class="attribute-list-title">repeat_retailer: </span>Indica se a transação foi realizada no mesmo varejista de uma transação anterior. Transações repetidas no mesmo local podem ser menos suspeitas. 1 se a transação foi feita no mesmo varejista; 0 caso contrário.</li>
+                </ul>
+                <ul>
+                    <li><span class="attribute-list-title">used_chip:  </span>Indica se a transação foi feita utilizando o chip do cartão. O uso do chip geralmente é mais seguro que outras formas de pagamento. 1 se a transação foi autorizada com o uso de um PIN; 0 caso contrário.</li>
+                </ul>
+                <ul>
+                    <li><span class="attribute-list-title">used_pin_number: </span>Indica se a transação foi autorizada utilizando a senha. Transações com senha são mais seguras e menos propensas a serem fraudulentas. 1 se a transação foi autorizada com o uso de um PIN; 0 caso contrário.</li>
+                </ul>
+                <ul>
+                    <li><span class="attribute-list-title">online_order: </span>Indica se a transação foi feita online. Transações online têm um risco maior de fraude comparado a transações presenciais. 1 se a transação foi feita online; 0 caso contrário.</li>
+                </ul>
+                <ul>
+                    <li><span class="attribute-list-title">fraud: </span>Variável alvo, que indica se a transação foi considerada fraudulenta (1) ou não (0).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="knn-description">
+            <div class="attributes-description-title">
+                Base de dados
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>distance_from_home</th>
+                        <th>distance_from_last_transaction</th>
+                        <th>ratio_to_median_purchase_price</th>
+                        <th>repeat_retailer</th>
+                        <th>used_chip</th>
+                        <th>used_pin_number</th>
+                        <th>online_order</th>
+                        <th>fraud</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>3,803057351</td><td>67,24108053</td><td>1,872949614</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+                    <tr><td>17,04338443</td><td>0,328273383</td><td>0,347203876</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>5,482982322</td><td>3,501975947</td><td>1,986467254</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td>53,46555834</td><td>0,088406625</td><td>0,204612702</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>3,216044756</td><td>17,14473592</td><td>1,788833243</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>15,69498554</td><td>175,9891815</td><td>0,855622829</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+                    <tr><td>85,83725334</td><td>1,035117876</td><td>0,868295614</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>35,26648271</td><td>0,085185008</td><td>0,174184253</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>56,59109468</td><td>0,718385891</td><td>0,736883111</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>67,59186117</td><td>1,612995562</td><td>0,207043005</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td>4,426862416</td><td>5,144466644</td><td>2,323604269</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>26,71146202</td><td>1,552008126</td><td>4,603600688</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+                    <tr><td>10,66447372</td><td>1,565769086</td><td>4,886520843</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+                    <tr><td>202,7574416</td><td>0,275015145</td><td>0,775548534</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+                    <tr><td>13,05847051</td><td>0,256084064</td><td>1,001254294</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td>83,19190905</td><td>0,974245099</td><td>2,204589077</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>31,89235267</td><td>0,120352361</td><td>0,348585634</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="attributes-description">
+            <div class="attributes-description-title">
+                KNN
+            </div>
+
+            <div class="knn-description">
+                A classificação será feita pelo algoritmo KNN (K-Nearest Neighbors/K-ésimo Vizinho mais Próximo).
+            </div>
+
+            <div class="knn-scorer">
+                <img src="img/scorer.png">
+            </div>
+
+            <div class="knn-pie-chart">
+                <img src="img/pie-chart.png">
+            </div>
+
+            <div class="knn-histograma">
+                <img src="img/histograma.png">
+            </div>
+
+            <div class="index-button">
+                <a href="index.html">
+                    <button>
+                        <span>
+                            Página inicial
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

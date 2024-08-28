@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    height: 30vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    width: 30vw;
+    height: 30vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 165px;
+}
+
+.title-container {
+    height: 30vh;
+    width: 40vw;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #545454;
+}
+
+.ajuste {
+    width: 30vw;
+    height: 30vh;
+}
+
+main {
+    width: 100vw;
+    height: 40vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.main-text {
+    width: 40vw;
+    height: 15vh;
+    font-size: 1.2rem;
+    color: #545454;
+    text-align: justify;
+    /* background-color: aquamarine; */
+    padding: 20px;
+    /* border-top: 3px solid #545454;
+    border-left: 3px solid #545454;
+    border-right: 3px solid #545454;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
+}
+
+.main-links {
+    width: 40vw;
+    height: 12vh;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    /* border-bottom: 3px solid #545454;
+    border-left: 3px solid #545454;
+    border-right: 3px solid #545454;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; */
+}
+
+.main-links a {
+    text-decoration: none;
+}
+
+.main-links button {
+    width: 15vw;
+    height: 10vh;
+    background-color: #545454;
+    margin: 2px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-links button:hover {
+    background-color: #747474;
+    transition: 0.5s;
+}
+
+.card-icon {
+    width: 40px;
+    margin-bottom: 2px;
+}
+
+.knime-logo {
+    width: 40px;
+}

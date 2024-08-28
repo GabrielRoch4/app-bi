@@ -2,30 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classificação de Fraudes com KNN</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/index-styles.css">
+    <title>Classificador de compras</title>
 </head>
 <body>
-    <h1>Classificação de Fraudes com KNN</h1>
-    <form id="classificationForm">
-        <!-- Campos de entrada para cada atributo -->
-        <input type="number" step="any" id="distance_from_home" placeholder="Distance from Home" required>
-        <input type="number" step="any" id="distance_from_last_transaction" placeholder="Distance from Last Transaction" required>
-        <input type="number" step="any" id="ratio_to_median_purchase_price" placeholder="Ratio to Median Purchase Price" required>
-        <input type="number" id="repeat_retailer" placeholder="Repeat Retailer (0 ou 1)" required>
-        <input type="number" id="used_chip" placeholder="Used Chip (0 ou 1)" required>
-        <input type="number" id="used_pin_number" placeholder="Used Pin Number (0 ou 1)" required>
-        <input type="number" id="online_order" placeholder="Online Order (0 ou 1)" required>
-        
-        <button type="submit">Classificar</button>
-    </form>
+    <div class="home">
+        <header>
+            <div class="logo-container">
+                <a href="https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud" target="_blank"><img src="img/logo.png"></a>
+            </div>
+            <div class="title-container">
+                Classificador de compras de cartão de crédito 
+            </div>
+            <div class="ajuste">
 
-    <div id="result"></div>
+            </div>
+        </header>
+        <main>
+            <div class="main-text"> 
+                No mundo digital atual, onde trilhões de transações com cartão de crédito ocorrem diariamente, a detecção de fraudes é um desafio crescente. Embora os pagamentos digitais estejam em constante evolução, os criminosos cibernéticos também estão se adaptando e aprimorando suas técnicas.
+            </div>
+            <div class="main-links">
+                <a href="infos.html">
+                    <button>
+                        <span>
+                            <img class="knime-logo" src="img/knime-logo.png">
+                        </span>
+                        <span>
+                            Algoritmo
+                        </span>
+                    </button>
+                </a>
+                <a href="classification.html">
+                    <button>
+                        <span>
+                            <img class="card-icon" src="img/card-icon.png">
+                        </span>
+                        <span>
+                            Classificar compra
+                        </span>
+                    </button>
+                </a>
+            </div>  
+        </main>
 
-    <script src="app.js"></script>
-    <!-- Adicione a biblioteca PapaParse -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    </div>
 </body>
 </html>

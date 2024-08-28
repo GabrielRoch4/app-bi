@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: #545454; */
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal da página */
+}
+
+header {
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #545454;
+}
+
+.logo-container {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 165px;
+}
+
+.title-container {
+    height: 30vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #545454;
+}
+
+.ajuste {
+    width: 30vw;
+    height: 30vh;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+    color: #545454;
+}
+
+.dataset-description {
+    width: 50vw;
+    margin: 30px 0 30px 0;
+    text-align: justify;
+    color: #545454;
+}
+
+.attributes-description {
+    width: 50vw;
+    margin: 15px 15px 0;
+    /* background-color: aqua; */
+}
+
+.attributes-description-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.attribute-list li {
+    list-style-type: none;
+    margin: 30px 0 30px 0;
+    text-align: justify;
+    
+}
+
+.attribute-list-title {
+    font-weight: bold;
+}
+
+.table-container {
+    width: 85vw; /* Controla a largura do contêiner da tabela */
+    overflow-x: auto; /* Adiciona barra de rolagem apenas para a tabela */
+    margin: 10px 0;
+}
+
+table {
+    width: 100%; /* Adapta a tabela ao tamanho do contêiner */
+    border-collapse: collapse;
+    background-color: #545454;
+    color: #545454;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    background-color: #fff; /* Cor de fundo para células */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.knn-description {
+    margin: 30px 0 30px 0;
+    color: #545454;
+}
+
+.knn-scorer {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.knn-pie-chart {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+}
+
+.knn-pie-chart img {
+    width: 556px;
+}
+
+.knn-histograma {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+}
+
+.knn-histograma img {
+    width: 556px;
+}
+
+.index-button {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.index-button button {
+    width: 15vw;
+    height: 10vh;
+    background-color: #545454;
+    margin: 2px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.index-button button:hover {
+    background-color: #747474;
+    transition: 0.5s;
+}
