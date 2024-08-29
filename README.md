@@ -11,26 +11,28 @@ Os seguintes algoritmos de aprendizado supervisionado foram aplicados na base de
 - Support Vector Machine (SVM)
 - K-Nearest Neighbor (KNN)
 - Redes Neurais Artificiais
-- Dataset Utilizado
 
-## Atributos do Dataset
-
+## Dataset Utilizado
 O dataset foi fornecido por uma instituição financeira (não especificada) e contém informações detalhadas sobre transações financeiras feitas por cartão de crédito, as quais podem ser verdadeiras ou fraudulentas, tanto presenciais quanto online.
 
-distance_from_home: Distância entre o local da transação e a residência do titular do cartão (em quilômetros).
-distance_from_last_transaction: Distância entre o local da última transação e o local da transação atual (em quilômetros).
-ratio_to_median_purchase_price: Razão entre o preço de uma transação e o preço mediano de transações anteriores.
-repeat_retailer: Indica se a transação foi realizada no mesmo varejista de uma transação anterior.
-used_chip: Indica se a transação foi feita utilizando o chip do cartão.
-used_pin_number: Indica se a transação foi autorizada utilizando a senha.
-online_order: Indica se a transação foi feita online.
-fraud: Variável alvo que indica se a transação foi considerada fraudulenta (1) ou não (0).
-Experimentos Realizados
-Normalização dos dados.
-Transformações de dados (String para Número e Número para String).
-Aplicação de filtros (Column Filter e Row Filter).
-Criação e treinamento de modelos utilizando os algoritmos mencionados.
-Avaliação dos modelos através das matrizes de confusão, acurácia e erro.
+
+### Atributos do Dataset
+
+- **distance_from_home**: Distância entre o local da transação e a residência do titular do cartão (em quilômetros).
+- **distance_from_last_transaction**: Distância entre o local da última transação e o local da transação atual (em quilômetros).
+- **ratio_to_median_purchase_price**: Razão entre o preço de uma transação e o preço mediano de transações anteriores.
+- **repeat_retailer**: Indica se a transação foi realizada no mesmo varejista de uma transação anterior.
+- **used_chip**: Indica se a transação foi feita utilizando o chip do cartão.
+- **used_pin_number**: Indica se a transação foi autorizada utilizando a senha.
+- **online_order**: Indica se a transação foi feita online.
+- **fraud**: Variável alvo que indica se a transação foi considerada fraudulenta (1) ou não (0).
+
+## Experimentos Realizados
+- Normalização dos dados.
+- Transformações de dados (String para Número e Número para String).
+- Aplicação de filtros (Column Filter e Row Filter).
+- Criação e treinamento de modelos utilizando os algoritmos mencionados.
+- Avaliação dos modelos através das matrizes de confusão, acurácia e erro.
 
 ## Resultados
 O algoritmo que apresentou o melhor desempenho para o conjunto de dados foi o K-Nearest Neighbor (KNN). Com base nisso, um aplicativo foi desenvolvido para permitir a classificação de novas entradas de dados, simulando o comportamento de detecção de fraude.
