@@ -1,20 +1,20 @@
-Trabalho de Inteligência de Negócios - IFTM Campus Patrocínio
+# Trabalho de Inteligência de Negócios - IFTM Campus Patrocínio
 Este repositório contém o terceiro trabalho avaliativo da disciplina de Inteligência Artificial, realizado no 5º período do curso de Análise e Desenvolvimento de Sistemas no Instituto Federal do Triângulo Mineiro (IFTM) - Campus Patrocínio.
 
-Descrição do Trabalho
+## Descrição do Trabalho
 O trabalho consiste na aplicação de algoritmos de aprendizado supervisionado utilizando uma base de dados de fraudes em transações financeiras por cartão de crédito. O objetivo é analisar e classificar os dados para detectar transações fraudulentas, apresentando os resultados em um aplicativo desenvolvido.
 
-Algoritmos Utilizados
+## Algoritmos Utilizados
 Os seguintes algoritmos de aprendizado supervisionado foram aplicados na base de dados utilizando o KNIME:
 
-Decision Tree (Árvore de Decisão)
+### Decision Tree (Árvore de Decisão)
 Support Vector Machine (SVM)
 K-Nearest Neighbor (KNN)
 Redes Neurais Artificiais
 Dataset Utilizado
 O dataset foi fornecido por uma instituição financeira (não especificada) e contém informações detalhadas sobre transações financeiras feitas por cartão de crédito, as quais podem ser verdadeiras ou fraudulentas, tanto presenciais quanto online.
 
-Atributos do Dataset
+## Atributos do Dataset
 distance_from_home: Distância entre o local da transação e a residência do titular do cartão (em quilômetros).
 distance_from_last_transaction: Distância entre o local da última transação e o local da transação atual (em quilômetros).
 ratio_to_median_purchase_price: Razão entre o preço de uma transação e o preço mediano de transações anteriores.
@@ -29,15 +29,16 @@ Transformações de dados (String para Número e Número para String).
 Aplicação de filtros (Column Filter e Row Filter).
 Criação e treinamento de modelos utilizando os algoritmos mencionados.
 Avaliação dos modelos através das matrizes de confusão, acurácia e erro.
-Resultados
+
+## Resultados
 O algoritmo que apresentou o melhor desempenho para o conjunto de dados foi o K-Nearest Neighbor (KNN). Com base nisso, um aplicativo foi desenvolvido para permitir a classificação de novas entradas de dados, simulando o comportamento de detecção de fraude.
 
-Aplicação
+## Aplicação
 O aplicativo desenvolvido para a classificação de novas entradas pode ser acessado no seguinte link:
 
-App de Classificação de Fraudes
+[App de Classificação de Fraudes]([https://github.com](https://gabrielroch4.github.io/app-bi/))
 
-Como Executar
+## Como Executar
 Clone este repositório.
 Abra o projeto no seu ambiente de desenvolvimento.
 
