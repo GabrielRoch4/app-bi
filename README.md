@@ -7,14 +7,16 @@ O trabalho consiste na aplicação de algoritmos de aprendizado supervisionado u
 ## Algoritmos Utilizados
 Os seguintes algoritmos de aprendizado supervisionado foram aplicados na base de dados utilizando o KNIME:
 
-### Decision Tree (Árvore de Decisão)
-Support Vector Machine (SVM)
-K-Nearest Neighbor (KNN)
-Redes Neurais Artificiais
-Dataset Utilizado
-O dataset foi fornecido por uma instituição financeira (não especificada) e contém informações detalhadas sobre transações financeiras feitas por cartão de crédito, as quais podem ser verdadeiras ou fraudulentas, tanto presenciais quanto online.
+- Decision Tree (Árvore de Decisão)
+- Support Vector Machine (SVM)
+- K-Nearest Neighbor (KNN)
+- Redes Neurais Artificiais
+- Dataset Utilizado
 
 ## Atributos do Dataset
+
+O dataset foi fornecido por uma instituição financeira (não especificada) e contém informações detalhadas sobre transações financeiras feitas por cartão de crédito, as quais podem ser verdadeiras ou fraudulentas, tanto presenciais quanto online.
+
 distance_from_home: Distância entre o local da transação e a residência do titular do cartão (em quilômetros).
 distance_from_last_transaction: Distância entre o local da última transação e o local da transação atual (em quilômetros).
 ratio_to_median_purchase_price: Razão entre o preço de uma transação e o preço mediano de transações anteriores.
@@ -36,7 +38,7 @@ O algoritmo que apresentou o melhor desempenho para o conjunto de dados foi o K-
 ## Aplicação
 O aplicativo desenvolvido para a classificação de novas entradas pode ser acessado no seguinte link:
 
-[App de Classificação de Fraudes]([https://github.com](https://gabrielroch4.github.io/app-bi/))
+[Clique para acessar](https://gabrielroch4.github.io/app-bi/)
 
 ## Como Executar
 Clone este repositório.
