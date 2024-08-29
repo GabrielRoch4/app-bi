@@ -20,7 +20,16 @@ document.getElementById('classificationForm').addEventListener('submit', async f
 
     // Classificar os novos dados usando o KNN
     const result = classifyWithKNN(normalizedNewEntry, dataset, 3); // K = 3, por exemplo
-    document.getElementById('result').innerText = `Classe Predita (Fraude): ${result}`;
+
+    let situacao
+
+    if(result == 0) {
+        situacao = "Autêntica"
+    }else {
+        situacao = "Fraudulenta"
+    }
+
+    document.getElementById('result').innerText = `Essa compra foi: ` + situacao + " " + `${result}`;
     console.log(result);
 });
 
